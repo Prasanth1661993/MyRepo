@@ -1,0 +1,113 @@
+.hero { 
+    position: relative; 
+    height: 200px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-image: url(../../assets/images/BPI.jpg); */
+    background-size: cover;
+    /* background-color: rgba(0, 0, 0, 0.75);s */
+    /* opacity: 0.5; */
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.75);
+    /* opacity: 0.5; */
+}
+
+  .circle.small {
+	border: 20px solid #98FF00;
+	border-radius: 50%;
+	width: 220px;
+	height: 220px;
+	z-index: 86;
+}
+
+.circle.filled {
+	background-color: #666666;
+}
+
+.circle h3 {
+    margin-top: 60px;
+    text-align: center;
+    font-family:  Arial, sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    color: white;
+    letter-spacing: -0.01em;
+    text-decoration: none;
+    display: block;
+}
+
+.circle p {
+    text-align: center;
+    font-family:  Times, serif;
+    font-weight: 800;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    display: block;
+    letter-spacing: -0.02em;
+    word-spacing: -0.02em;
+    line-height: 0;
+    vertical-align: middle;
+    margin-top: 1px;
+}
+
+.pie {
+    /* Basic layout */
+    display: inline-block;
+    width: 15.75em;
+    height: 15.75em;
+    border-radius: 50%;
+  
+    /* A little styling */
+    border: 0.75em solid rgb(36, 32, 32);
+    box-shadow: 0 .075em .2em .05em rgba(0,0,0,.25);
+  
+  
+    /* fixes a minor clipping issue in Chrome */
+    background-origin: border-box; 
+  }
+  .pie ::before{
+    font-weight: bold;
+    color: navy;
+    content: "23 ";
+    text-align: center;
+    background-image: conic-gradient(
+      rgb(245, 243, 237) 12deg,     
+      #fc3 0 134deg, 
+      rgb(243, 241, 236) 0deg,     
+      
+    );
+   
+   
+  }
+  .centerText {
+    display: true;
+    content: "280"
+}
+  svg {
+    width: 100px; height: 100px;
+    transform: rotate(-90deg);
+    background: yellowgreen;
+    border-radius: 80%;
+  }
+  
+  circle {
+    fill: rgb(238, 238, 238);
+    stroke: rgb(233, 209, 143);
+    stroke-width: 32;
+    stroke-dasharray: 38 100; 
+  }
+   
+  
+    
+  

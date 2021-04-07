@@ -1,0 +1,107 @@
+:not(svg) {
+    transform-origin: 0px 0px;
+}
+.c3 svg {
+    font: 10px sans-serif;
+    -webkit-tap-highlight-color: transparent;
+    font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+.c3-text.c3-empty {
+    fill: #808080;
+    font-size: 2em;
+}
+.g {
+    transform: translate(113, 89);
+}
+.c3-chart-arcs-title {
+    dominant-baseline: middle;
+    font-size: 1.3em;
+}
+.c3-chart-arc.c3-target g path {
+    opacity: 1;
+}
+.c3-chart-arc path {
+    stroke: #fff;
+}
+.c3 path, .c3 line {
+    fill: none;
+    stroke: rgba(0, 40, 100, 0.12);
+}
+.path {
+    transform: none;
+    d: path("M 5.17719e-15 -84.55 A 84.55 84.55 0 0 1 13.9165 83.3969 L 0 0 Z");
+}
+.c3-chart-arc text {
+    fill: #fff;
+    font-size: 13px;
+}
+.text {
+    transform: translate(63.1299, -5.23109);
+}
+.c3 svg {
+    font: 10px sans-serif;
+    -webkit-tap-highlight-color: transparent;
+    font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+.c3-chart-arc path {
+    stroke: #fff;
+}
+.c3-chart-arc.c3-target g path {
+    opacity: 1;
+}
+
+path[AttributesStyle] {
+    transform: none;
+    d: path("M 5.17719e-15 -84.55 A 84.55 84.55 0 0 1 13.9165 83.3969 L 0 0 Z");
+}
+#chart {
+    height: 280px;
+    margin: 0px auto;
+    text-align: center;
+}
+.c3 svg {
+    font: 10px sans-serif;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+:not(svg) {
+    transform-origin: 0px 0px;
+}
+g[AttributesStyle] {
+    transform: translate(683.638, 123);
+}.c3 svg {
+    font: 10px sans-serif;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+
+#app{
+    padding: 50px 0;
+  }
+  
+  .custom-legend{
+    cursor: pointer;
+  }
+  
+  text.custom-legend-value{
+    font-size: 28px;
+    fill: black;
+    alignment-baseline: hanging;
+  }
+  text.custom-legend-title{
+    font-size: 15px;
+    fill: grey;
+    alignment-baseline: hanging;
+  }
+  
+  .c3-arc.c3-arc-good,
+  .custom-legend-color.is-good{
+    fill: #00d455 !important;
+  }
+  .c3-arc.c3-arc-neutral,
+  .custom-legend-color.is-neutral{
+    fill: #5599ff !important;
+  }
+  .c3-arc.c3-arc-bad,
+  .custom-legend-color.is-bad{
+    fill: #ff2a2a !important;
+  }

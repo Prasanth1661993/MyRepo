@@ -1,0 +1,43 @@
+<div class="cd-md-6" style="position: relative; overflow: hidden; width: 418px; height: 350px; cursor: default;">
+  <canvas
+      baseChart
+      [chartType]="'pie'"
+      [datasets]="pieChartData"
+      [labels]="pieChartLabels"
+      [options]="pieChartOptions"
+      [legend]="true"
+      [colors]="pieChartColor"
+      (chartClick)="onChartClick($event)">
+  </canvas>
+  <div style="position: relative; overflow: hidden; width: 418px; height: 350px; cursor: default;"><canvas width="470"
+      height="393" data-zr-dom-id="zr_0"
+      style="position: absolute; left: 0px; top: 0px; width: 418px; height: 350px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></canvas>
+  </div>
+</div>
+<!doctype html>
+    <html>
+    <head>
+    	<title>ECharts Sample</title>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/4.6.0/echarts-en.min.js"></script>
+    </head>
+    <body>
+    	<div id="chart" style="width: 500px; height: 350px;"></div>
+    	<script>
+    		var chart = document.getElementById('chart');
+    		var myChart = echarts.init(chart);
+    		var option = {
+    			title: { text: 'ECharts Sample' },
+    			tooltip: { },
+    			legend: { data: [ 'Sales' ] },
+    			xAxis: { data: [ "shirt", "cardign", "chiffon shirt", "pants", "heels", "socks" ] },
+    			yAxis: { },
+    			series: [{
+    				name: 'Sales',
+    				type: 'bar',
+    				data: [5, 20, 36, 10, 10, 20]
+    			}]
+    		};
+    		myChart.setOption(option);
+    	</script>
+    </body>
+    </html>
