@@ -20,8 +20,8 @@
      },
      "nodeImage":{
         "url":"https://raw.githubusercontent.com/RajaGds/OrgChart/main/images/1_dylan.png",
-        "width":65,
-        "height":65,
+        "width":75,
+        "height":75,
         "centerTopDistance":0,
         "centerLeftDistance":0,
         "cornerShape":"CIRCLE",
@@ -32,7 +32,7 @@
         "blue":255,
         "alpha":1
      },
-        "borderWidth":5,
+        "borderWidth":7,
         "borderColor":{
            "red":255,
            "green":230,
