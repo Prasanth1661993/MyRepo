@@ -40,7 +40,10 @@
             "alpha":1
          }
       },
-     
+      "nodeIcon":{
+         "icon":"",
+         "size":0
+      },
       "template":"<div>\n                  <div style=\"margin-left:70px;\n margin-top:10px;\n font-size:20px;\n font-weight:bold;\n \">Ryan Harp </div>\n <div style=\"margin-left:70px;\n margin-top:3px;\n font-size:16px;\n \">Senior Architect  </div>\n\n <div style=\"margin-left:70px;\n  margin-top:3px;\n font-size:14px;\n \">Manager | Trivandrum</div>\n\n  </div>",
       "connectorLineColor":{
          "red":220,
