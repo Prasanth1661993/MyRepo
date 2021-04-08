@@ -8,14 +8,22 @@
 <base target="chart-container" href="https://observablehq.com/@paulosobrinho/collapsible-org-chart">
 </head>
 <body translate="no">
-  <h2>Org chart</h2>
-  <div class="chart-container" style=" padding-top:10px; width:1200px; height:1200px "> </div>
-  <app-root></app-root>
-
+    <div class="container" style="padding-top:20px; border: 1px solid lightgrey;">
+        <div style="background-color: black; padding-top: 10px; ">
+        <span style="color: white; width:20px; height:10px ">EY</span>
+        </div>
+      <div style=" padding-top:10px; width:1200px; height:80px;font-size: medium; ">
+        <span class="design" ></span>
+      Organizational chart
+      </div>
+      <div class="chart-container" style=" padding-top:10px; width:1100px; height:700px "> </div>
+      </div>
+<app-root></app-root>
 <script src='https://d3js.org/d3.v5.min.js'></script>
 <script id="rendered-js">
-
- d3.json('https://raw.githubusercontent.com/RajaGds/OrgChart/main/orgdata.json')
+//   d3.json('https://raw.githubusercontent.com/Prasanth1661993/MyRepo/master/Mock.json')
+d3.json('https://raw.githubusercontent.com/RajaGds/OrgChart/main/orgdata.json')
+// d3.json('https://raw.githubusercontent.com/Prasanth1661993/MyRepo/master/Mock.json')
 .then(data=>{
   // chart = Chart();
   Chart(data)
