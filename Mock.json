@@ -275,10 +275,10 @@
          
       },
       "nodeIcon":{
-         "icon":"https://raw.githubusercontent.com/RajaGds/OrgChart/main/images/tree.png",
+         "icon":"",
          "size":30
       },
-      "template":"<div>\n <div style=\"margin-left:80px;\n margin-top:15px;\n font-size:25px;\n cursor: pointer;\n font-weight:bold;\n \"> Leverling Janet </a> </div>\n <div style=\"margin-left:80px;\n color:lightgrey;\n margin-top:4px;\n font-size:18px;\n color:grey;\n \">CEO office</div>\n\n <div style=\"margin-left:80px;\n  margin-top:4px;\n  font-size:18px;\n color:grey;\n   \">Corporate </div>\n\n</div>",
+      "template":"<div>\n <div style=\"margin-left:80px;\n margin-top:15px;\n font-size:20px;\n cursor: pointer;\n font-weight:bold;\n \"> Leverling Janet </a> </div>\n <div style=\"margin-left:80px;\n color:lightgrey;\n margin-top:4px;\n font-size:18px;\n color:grey;\n \">CEO office</div>\n\n <div style=\"margin-left:80px;\n  margin-top:4px;\n  font-size:18px;\n  \">Corporate </div>\n\n</div>",
       "connectorLineColor":{
          "red":220,
          "green":189,
@@ -396,7 +396,7 @@
          "icon":"",
          "size":30
       },
-      "template":"<div>\n <div style=\"margin-left:80px;\n margin-top:15px;\n font-size:25px;\n cursor: pointer;\n font-weight:bold;\n \">  Leverling Janet </a> </div>\n <div style=\"margin-left:80px;\n color:grey;\n margin-top:4px;\n font-size:18px;\n color:grey;\n \">Senior Architech</div>\n\n <div style=\"margin-left:80px;\n  margin-top:4px;\n  font-size:18px;\n color:grey;\n   \">Manager | Bangalore </div>\n\n</div>",
+      "template":"<div>\n <div style=\"margin-left:80px;\n margin-top:15px;\n font-size:25px;\n cursor: pointer;\n font-weight:bold;\n \">  Leverling Janet </a> </div>\n <div style=\"margin-left:80px;\n  margin-top:4px;\n font-size:18px;\n color:grey;\n \">Senior Architech</div>\n\n <div style=\"margin-left:80px;\n  margin-top:4px;\n  font-size:18px;\n  \">Manager | Bangalore </div>\n\n</div>",
       "connectorLineColor":{
          "red":220,
          "green":189,
@@ -412,8 +412,8 @@
    {
       "nodeId":"O-8",
       "parentNodeId":"O-2",
-      "width":340,
-      "height":143,
+      "width":330,
+      "height":100,
       "borderWidth":1,
       "borderRadius":5,
       "borderColor":{
@@ -436,11 +436,18 @@
          "centerLeftDistance":0,
          "cornerShape":"CIRCLE",
          "shadow":false,
-         "borderWidth":0,
+        
+     "backgroundColor":{
+         "red":255,
+         "green":255,
+         "blue":255,
+         "alpha":1
+      },
+      "borderWidth":5,
          "borderColor":{
-            "red":19,
-            "green":123,
-            "blue":128,
+            "red":146,
+            "green":43,
+            "blue":115,
             "alpha":1
          }
       },
@@ -448,7 +455,7 @@
          "icon":"",
          "size":30
       },
-      "template":"<div>\n<div style=\"margin-left:80px;\n margin-top:15px;\n font-size:20px;\n font-weight:bold;\n \">Ryan Harp </div>\n <div style=\"margin-left:80px;\n margin-top:4px;\n font-size:18px;\n color:grey;\n  \">Senior Architect  </div>\n\n <div style=\"margin-left:80px;\n  margin-top:4px;\n font-size:14px;\n \">Manager | Trivandrum</div>\n\n  </div>",
+      "template":"<div>\n<div style=\"margin-left:80px;\n margin-top:15px;\n font-size:20px;\n font-weight:bold;\n \">Ryan Harp </div>\n <div style=\"margin-left:80px;\n margin-top:4px;\n font-size:18px;\n color:grey;\n \">Senior Architect  </div>\n\n <div style=\"margin-left:80px;\n  margin-top:4px;\n font-size:14px;\n \">Manager | Trivandrum</div>\n\n  </div>",
       "connectorLineColor":{
          "red":220,
          "green":189,
@@ -458,8 +465,8 @@
       "connectorLineWidth":5,
       "dashArray":"",
       "expanded":false,
-      "directSubordinates":9,
-      "totalSubordinates":24
+      "directSubordinates":3,
+      "totalSubordinates":142
    },
    {
       "nodeId":"O-9",
@@ -488,7 +495,7 @@
          "centerLeftDistance":0,
          "cornerShape":"CIRCLE",
          "shadow":false,
-         "borderWidth":0,
+         "borderWidth":5,
          "borderColor":{
             "red":19,
             "green":123,
@@ -559,59 +566,7 @@
          "icon":"",
          "size":30
       },
-      "template":"<div>\n <div style=\"margin-left:80px;\n margin-top:15px;\n font-size:25px;\n cursor: pointer;\n font-weight:bold;\n \">  Leverling Janet </a> </div>\n <div style=\"margin-left:80px;\n color:grey;\n margin-top:4px;\n font-size:18px;\n color:grey;\n \">Senior Architech</div>\n\n <div style=\"margin-left:80px;\n  margin-top:4px;\n  font-size:18px;\n color:grey;\n   \">Manager | Bangalore </div>\n\n</div>",
-      "connectorLineColor":{
-         "red":220,
-         "green":189,
-         "blue":207,
-         "alpha":1
-      },
-      "connectorLineWidth":5,
-      "dashArray":"",
-      "expanded":true,
-      "directSubordinates":3,
-      "totalSubordinates":144
-   },
-   {
-      "nodeId":"O-8",
-      "parentNodeId":"O-2",
-      "width":340,
-      "height":143,
-      "borderWidth":1,
-      "borderRadius":5,
-      "borderColor":{
-         "red":15,
-         "green":140,
-         "blue":121,
-         "alpha":1
-      },
-      "backgroundColor":{
-         "red":51,
-         "green":182,
-         "blue":208,
-         "alpha":1
-      },
-      "nodeImage":{
-         "url":"https://raw.githubusercontent.com/RajaGds/OrgChart/main/images/1_dylan.png",
-         "width":100,
-         "height":100,
-         "centerTopDistance":0,
-         "centerLeftDistance":0,
-         "cornerShape":"CIRCLE",
-         "shadow":false,
-         "borderWidth":0,
-         "borderColor":{
-            "red":19,
-            "green":123,
-            "blue":128,
-            "alpha":1
-         }
-      },
-      "nodeIcon":{
-         "icon":"",
-         "size":30
-      },
-      "template":"<div>\n<div style=\"margin-left:80px;\n margin-top:15px;\n font-size:20px;\n font-weight:bold;\n \">Ryan Harp </div>\n <div style=\"margin-left:80px;\n margin-top:4px;\n font-size:18px;\n color:grey;\n  \">Senior Architect  </div>\n\n <div style=\"margin-left:80px;\n  margin-top:4px;\n font-size:14px;\n \">Manager | Trivandrum</div>\n\n  </div>",
+      "template":"<div>\n <div style=\"margin-left:80px;\n margin-top:15px;\n font-size:25px;\n cursor: pointer;\n font-weight:bold;\n \">  Leverling Janet </a> </div>\n <div style=\"margin-left:80px;\n color:grey;\n margin-top:4px;\n font-size:18px;\n color:grey;\n \">Senior Architech</div>\n\n <div style=\"margin-left:80px;\n  margin-top:4px;\n  font-size:18px;\n   \">Manager | Bangalore </div>\n\n</div>",
       "connectorLineColor":{
          "red":220,
          "green":189,
@@ -621,9 +576,9 @@
       "connectorLineWidth":5,
       "dashArray":"",
       "expanded":false,
-      "directSubordinates":9,
-      "totalSubordinates":24
-   }, 
+      "directSubordinates":3,
+      "totalSubordinates":144
+   },
    {
       "nodeId":"O-11",
       "parentNodeId":"O-3",
@@ -670,7 +625,7 @@
          "icon":"",
          "size":30
       },
-      "template":"<div>\n <div style=\"margin-left:80px;\n margin-top:15px;\n font-size:25px;\n cursor: pointer;\n font-weight:bold;\n \">  Leverling Janet </a> </div>\n <div style=\"margin-left:80px;\n color:grey;\n margin-top:4px;\n font-size:18px;\n color:grey;\n \">Senior Architech</div>\n\n <div style=\"margin-left:80px;\n  margin-top:4px;\n  font-size:18px;\n color:grey;\n   \">Manager | Bangalore </div>\n\n</div>",
+      "template":"<div>\n <div style=\"margin-left:80px;\n margin-top:15px;\n font-size:25px;\n cursor: pointer;\n font-weight:bold;\n \">  Leverling Janet </a> </div>\n <div style=\"margin-left:80px;\n color:grey;\n margin-top:4px;\n font-size:18px;\n color:grey;\n \">Senior Architech</div>\n\n <div style=\"margin-left:80px;\n  margin-top:4px;\n  font-size:18px;\n    \">Manager | Bangalore </div>\n\n</div>",
       "connectorLineColor":{
          "red":220,
          "green":189,
@@ -679,7 +634,7 @@
       },
       "connectorLineWidth":5,
       "dashArray":"",
-      "expanded":true,
+      "expanded":false,
       "directSubordinates":3,
       "totalSubordinates":144
    },
@@ -710,7 +665,7 @@
          "centerLeftDistance":0,
          "cornerShape":"CIRCLE",
          "shadow":false,
-         "borderWidth":0,
+         "borderWidth":5,
          "borderColor":{
             "red":19,
             "green":123,
@@ -762,7 +717,7 @@
          "centerLeftDistance":0,
          "cornerShape":"CIRCLE",
          "shadow":false,
-         "borderWidth":0,
+         "borderWidth":5,
          "borderColor":{
             "red":19,
             "green":123,
