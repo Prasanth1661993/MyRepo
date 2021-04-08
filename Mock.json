@@ -234,7 +234,7 @@
    },
    {
       "nodeId":"O-5",
-      "parentNodeId":"O-1",
+      "parentNodeId":"O-3",
       "width":330,
       "height":100,
       "borderWidth":1,
@@ -278,7 +278,7 @@
          "icon":"",
          "size":30
       },
-      "template":"<div>\n <div style=\"margin-left:80px;\n margin-top:15px;\n font-size:20px;\n cursor: pointer;\n font-weight:bold;\n \"> Leverling Janet </a> </div>\n <div style=\"margin-left:80px;\n color:lightgrey;\n margin-top:4px;\n font-size:18px;\n color:grey;\n \">CEO office</div>\n\n <div style=\"margin-left:80px;\n  margin-top:4px;\n  font-size:18px;\n  \">Corporate </div>\n\n</div>",
+      "template":"<div>\n <div style=\"margin-left:80px;\n margin-top:15px;\n font-size:20px;\n font-weight:bold;\n cursor: pointer;\n  \"> Leverling Janet </a> </div>\n <div style=\"margin-left:80px;\n color:lightgrey;\n margin-top:4px;\n font-size:18px;\n color:grey;\n \">CEO office</div>\n\n <div style=\"margin-left:80px;\n  margin-top:4px;\n  font-size:18px;\n  \">Corporate </div>\n\n</div>",
       "connectorLineColor":{
          "red":220,
          "green":189,
@@ -293,7 +293,7 @@
    },
    {
       "nodeId":"O-6",
-      "parentNodeId":"O-2",
+      "parentNodeId":"O-3",
       "width":330,
       "height":100,
       "borderWidth":1,
@@ -352,7 +352,7 @@
    },
    {
       "nodeId":"O-7",
-      "parentNodeId":"O-2",
+      "parentNodeId":"O-3",
       "width":330,
       "height":100,
       "borderWidth":1,
@@ -396,7 +396,7 @@
          "icon":"",
          "size":30
       },
-      "template":"<div>\n <div style=\"margin-left:80px;\n margin-top:15px;\n font-size:25px;\n cursor: pointer;\n font-weight:bold;\n \">  Leverling Janet </a> </div>\n <div style=\"margin-left:80px;\n  margin-top:4px;\n font-size:18px;\n color:grey;\n \">Senior Architech</div>\n\n <div style=\"margin-left:80px;\n  margin-top:4px;\n  font-size:18px;\n  \">Manager | Bangalore </div>\n\n</div>",
+      "template":"<div>\n <div style=\"margin-left:80px;\n margin-top:15px;\n font-size:20px;\n font-weight:bold;\n cursor: pointer;\n  \">  Leverling Janet </a> </div>\n <div style=\"margin-left:80px;\n  margin-top:4px;\n font-size:18px;\n color:grey;\n \">Senior Architech</div>\n\n <div style=\"margin-left:80px;\n  margin-top:4px;\n  font-size:18px;\n  \">Manager | Bangalore </div>\n\n</div>",
       "connectorLineColor":{
          "red":220,
          "green":189,
@@ -411,7 +411,7 @@
    },
    {
       "nodeId":"O-8",
-      "parentNodeId":"O-2",
+      "parentNodeId":"O-3",
       "width":330,
       "height":100,
       "borderWidth":1,
@@ -470,7 +470,7 @@
    },
    {
       "nodeId":"O-9",
-      "parentNodeId":"O-3",
+      "parentNodeId":"O-4",
       "width":340,
       "height":143,
       "borderWidth":1,
@@ -522,7 +522,7 @@
    }, 
    {
       "nodeId":"O-10",
-      "parentNodeId":"O-3",
+      "parentNodeId":"O-4",
       "width":330,
       "height":100,
       "borderWidth":1,
@@ -566,7 +566,7 @@
          "icon":"",
          "size":30
       },
-      "template":"<div>\n <div style=\"margin-left:80px;\n margin-top:15px;\n font-size:25px;\n cursor: pointer;\n font-weight:bold;\n \">  Leverling Janet </a> </div>\n <div style=\"margin-left:80px;\n color:grey;\n margin-top:4px;\n font-size:18px;\n color:grey;\n \">Senior Architech</div>\n\n <div style=\"margin-left:80px;\n  margin-top:4px;\n  font-size:18px;\n   \">Manager | Bangalore </div>\n\n</div>",
+      "template":"<div>\n <div style=\"margin-left:80px;\n margin-top:15px;\n font-size:20px;\n font-weight:bold;\n cursor: pointer;\n  \">  Leverling Janet </a> </div>\n <div style=\"margin-left:80px;\n color:grey;\n margin-top:4px;\n font-size:18px;\n color:grey;\n \">Senior Architech</div>\n\n <div style=\"margin-left:80px;\n  margin-top:4px;\n  font-size:18px;\n   \">Manager | Bangalore </div>\n\n</div>",
       "connectorLineColor":{
          "red":220,
          "green":189,
@@ -581,7 +581,7 @@
    },
    {
       "nodeId":"O-11",
-      "parentNodeId":"O-3",
+      "parentNodeId":"O-4",
       "width":330,
       "height":100,
       "borderWidth":1,
@@ -625,7 +625,7 @@
          "icon":"",
          "size":30
       },
-      "template":"<div>\n <div style=\"margin-left:80px;\n margin-top:15px;\n font-size:25px;\n cursor: pointer;\n font-weight:bold;\n \">  Leverling Janet </a> </div>\n <div style=\"margin-left:80px;\n color:grey;\n margin-top:4px;\n font-size:18px;\n color:grey;\n \">Senior Architech</div>\n\n <div style=\"margin-left:80px;\n  margin-top:4px;\n  font-size:18px;\n    \">Manager | Bangalore </div>\n\n</div>",
+      "template":"<div>\n <div style=\"margin-left:80px;\n margin-top:15px;\n font-size:20px;\n font-weight:bold;\n cursor: pointer;\n  \">  Leverling Janet </a> </div>\n <div style=\"margin-left:80px;\n color:grey;\n margin-top:4px;\n font-size:18px;\n color:grey;\n \">Senior Architech</div>\n\n <div style=\"margin-left:80px;\n  margin-top:4px;\n  font-size:18px;\n    \">Manager | Bangalore </div>\n\n</div>",
       "connectorLineColor":{
          "red":220,
          "green":189,
@@ -640,7 +640,7 @@
    },
    {
       "nodeId":"O-12",
-      "parentNodeId":"O-4",
+      "parentNodeId":"O-2",
       "width":340,
       "height":143,
       "borderWidth":1,
@@ -692,7 +692,7 @@
    },
      {
       "nodeId":"O-13",
-      "parentNodeId":"O-4",
+      "parentNodeId":"O-2",
       "width":340,
       "height":143,
       "borderWidth":1,
