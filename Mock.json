@@ -2,10 +2,10 @@
    {
       "nodeId":"O-1",
       "parentNodeId":null,
-      "width":327,
+      "width":360,
       "height":100,
       "borderWidth":1,
-      "borderRadius":5,
+      "borderRadius":7,
       "borderColor":{
          "red":15,
          "green":140,
@@ -13,38 +13,35 @@
          "alpha":1
       },
       "backgroundColor":{
-         "red":51,
-         "green":182,
-         "blue":208,
+         "red":256,
+         "green":256,
+         "blue":256,
          "alpha":1
       },
       "nodeImage":{
          "url":"https://raw.githubusercontent.com/RajaGds/OrgChart/main/images/1_dylan.png",
-         "width":65,
-         "height":65,
+         "width":100,
+         "height":100,
          "centerTopDistance":0,
          "centerLeftDistance":0,
          "cornerShape":"CIRCLE",
          "shadow":false,
-     "backgroundColor":{
-         "red":255,
-         "green":255,
-         "blue":255,
-         "alpha":1
-      },
-         "borderWidth":5,
+         "backgroundColor":{
+            "red":51,
+            "green":182,
+            "blue":208,
+            "alpha":1
+         },
+      "borderWidth":5,
          "borderColor":{
-            "red":255,
-            "green":230,
-            "blue":0,
+            "red":146,
+            "green":43,
+            "blue":115,
             "alpha":1
          }
       },
-      "nodeIcon":{
-         "icon":"https://raw.githubusercontent.com/RajaGds/OrgChart/main/images/tree.png",
-         "size":30
-      },
-      "template":"<div>\n <div style=\"margin-left:70px;\n margin-top:10px;\n font-size:20px;\n cursor: pointer;\n font-weight:bold;\n \"> <a href='https://github.com/bumbeishvili/d3-organization-chart' style='text-decoration: none;'> Dylan Robertson </a> </div>\n <div style=\"margin-left:70px;\n  margin-top:3px;\n font-size:16px;\n \">Delivery Head</div>\n\n <div style=\"margin-left:70px;\n  margin-top:3px;\n  font-size:14px;\n   \">Sr.Manager | Trivandrum </div>\n\n</div>",
+     
+      "template":"<div>\n                  <div style=\"margin-left:70px;\n margin-top:10px;\n font-size:20px;\n font-weight:bold;\n \">Ryan Harp </div>\n <div style=\"margin-left:70px;\n margin-top:3px;\n font-size:16px;\n \">Senior Architect  </div>\n\n <div style=\"margin-left:70px;\n  margin-top:3px;\n font-size:14px;\n \">Manager | Trivandrum</div>\n\n  </div>",
       "connectorLineColor":{
          "red":220,
          "green":189,
@@ -53,7 +50,9 @@
       },
       "connectorLineWidth":5,
       "dashArray":"",
-      "expanded":false
+      "expanded":false,
+      "directSubordinates":3,
+      "totalSubordinates":142
    },
    {
       "nodeId":"O-2",
@@ -96,10 +95,7 @@
             "alpha":1
          }
       },
-      "nodeIcon":{
-         "icon":"https://raw.githubusercontent.com/RajaGds/OrgChart/main/images/tree.png",
-         "size":30
-      },
+      
     "nodeIcon":{
          "icon":"https://raw.githubusercontent.com/RajaGds/OrgChart/main/images/alert.jpg",
          "size":30
