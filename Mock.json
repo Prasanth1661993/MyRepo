@@ -32,7 +32,7 @@
             "blue":208,
             "alpha":1
          },
-      "borderWidth":5,
+      "borderWidth":7,
          "borderColor":{
             "red":255,
             "green":230,
@@ -94,7 +94,7 @@
          "blue":255,
          "alpha":1
       },
-     "borderWidth":5,
+     "borderWidth":7,
          "borderColor":{
             "red":53,
             "green":164,
@@ -111,7 +111,7 @@
          "icon":"https://raw.githubusercontent.com/RajaGds/OrgChart/main/images/tree.png",
          "size":30
       },
-      "template":"<div>\n                  <div style=\"margin-left:80px;\n margin-top:15px;\n font-size:20px;\n font-weight:bold;\n \">Gregor Maier </div>\n <div style=\"margin-left:80px;\n margin-top:4px;\n font-size:18px;\n color:grey;\n \">Senior Architect  </div>\n\n <div style=\"margin-left:80px;\n  margin-top:4px;\n font-size:14px;\n \">Manager | Bangalore</div>\n\n  </div>",
+      "template":"<div>\n                  <div style=\"margin-left:80px;\n margin-top:15px;\n font-size:20px;\n font-weight:bold;\n \">Gregor Maier </div>\n <div style=\"margin-left:80px;\n margin-top:4px;\n font-size:18px;\n color:grey;\n \">Senior Architect  </div>\n\n <div style=\"margin-left:80px;\n  margin-top:4px;\n font-size:16px;\n \">Manager | Bangalore</div>\n\n  </div>",
       "connectorLineColor":{
          "red":220,
          "green":189,
@@ -155,7 +155,7 @@
          "blue":255,
          "alpha":1
       },
-        "borderWidth":5,
+        "borderWidth":7,
          "borderColor":{
             "red":52,
             "green":199,
@@ -171,7 +171,7 @@
          "icon":"https://raw.githubusercontent.com/RajaGds/OrgChart/main/images/alert.jpg",
          "size":30
       },
-      "template":"<div>\n                  <div style=\"margin-left:80px;\n margin-top:15px;\n font-size:20px;\n font-weight:bold;\n \">Jeo Mills </div>\n <div style=\"margin-left:80px;\n margin-top:4px;\n font-size:18px;\n color:grey;\n \">Senior Architect  </div>\n\n <div style=\"margin-left:80px;\n  margin-top:4px;\n font-size:14px;\n \">Manager | Trivandrum</div>\n\n  </div>",
+      "template":"<div>\n                  <div style=\"margin-left:80px;\n margin-top:15px;\n font-size:20px;\n font-weight:bold;\n \">Jeo Mills </div>\n <div style=\"margin-left:80px;\n margin-top:4px;\n font-size:18px;\n color:grey;\n \">Senior Architect  </div>\n\n <div style=\"margin-left:80px;\n  margin-top:4px;\n font-size:16px;\n \">Manager | Trivandrum</div>\n\n  </div>",
       "connectorLineColor":{
          "red":220,
          "green":189,
@@ -216,7 +216,7 @@
          "blue":255,
          "alpha":1
       },
-      "borderWidth":5,
+      "borderWidth":7,
          "borderColor":{
             "red":146,
             "green":43,
@@ -232,7 +232,7 @@
          "icon":"",
          "size":30
       },
-      "template":"<div>\n<div style=\"margin-left:80px;\n margin-top:15px;\n font-size:20px;\n font-weight:bold;\n \">Ryan Harp </div>\n <div style=\"margin-left:80px;\n margin-top:4px;\n font-size:18px;\n color:grey;\n \">Senior Architect  </div>\n\n <div style=\"margin-left:80px;\n  margin-top:4px;\n font-size:14px;\n \">Manager | Trivandrum</div>\n\n  </div>",
+      "template":"<div>\n<div style=\"margin-left:80px;\n margin-top:15px;\n font-size:20px;\n font-weight:bold;\n \">Ryan Harp </div>\n <div style=\"margin-left:80px;\n margin-top:4px;\n font-size:18px;\n color:grey;\n \">Senior Architect  </div>\n\n <div style=\"margin-left:80px;\n  margin-top:4px;\n font-size:16px;\n \">Manager | Trivandrum</div>\n\n  </div>",
       "connectorLineColor":{
          "red":220,
          "green":189,
@@ -272,7 +272,7 @@
          "centerLeftDistance":0,
          "cornerShape":"CIRCLE",
          "shadow":false,
-         "borderWidth":5,
+         "borderWidth":7,
          "borderColor":{
             "red":19,
             "green":123,
@@ -342,7 +342,7 @@
          "blue":255,
          "alpha":1
       },
-      "borderWidth":5,
+      "borderWidth":7,
          "borderColor":{
             "red":146,
             "green":43,
@@ -358,7 +358,7 @@
          "icon":"",
          "size":30
       },
-      "template":"<div>\n<div style=\"margin-left:80px;\n margin-top:15px;\n font-size:20px;\n font-weight:bold;\n \">Ryan Harp </div>\n <div style=\"margin-left:80px;\n margin-top:4px;\n font-size:18px;\n color:grey;\n \">Senior Architect  </div>\n\n <div style=\"margin-left:80px;\n  margin-top:4px;\n font-size:14px;\n \">Manager | Trivandrum</div>\n\n  </div>",
+      "template":"<div>\n<div style=\"margin-left:80px;\n margin-top:15px;\n font-size:20px;\n font-weight:bold;\n \">Ryan Harp </div>\n <div style=\"margin-left:80px;\n margin-top:4px;\n font-size:18px;\n color:grey;\n \">Senior Architect  </div>\n\n <div style=\"margin-left:80px;\n  margin-top:4px;\n font-size:16px;\n \">Manager | Trivandrum</div>\n\n  </div>",
       "connectorLineColor":{
          "red":220,
          "green":189,
@@ -398,7 +398,7 @@
          "centerLeftDistance":0,
          "cornerShape":"CIRCLE",
          "shadow":false,
-         "borderWidth":5,
+         "borderWidth":7,
          "borderColor":{
             "red":19,
             "green":123,
@@ -468,7 +468,7 @@
          "blue":255,
          "alpha":1
       },
-      "borderWidth":5,
+      "borderWidth":7,
          "borderColor":{
             "red":146,
             "green":43,
@@ -484,7 +484,7 @@
          "icon":"",
          "size":30
       },
-      "template":"<div>\n<div style=\"margin-left:80px;\n margin-top:15px;\n font-size:20px;\n font-weight:bold;\n \">Ryan Harp </div>\n <div style=\"margin-left:80px;\n margin-top:4px;\n font-size:18px;\n color:grey;\n \">Senior Architect  </div>\n\n <div style=\"margin-left:80px;\n  margin-top:4px;\n font-size:14px;\n \">Manager | Trivandrum</div>\n\n  </div>",
+      "template":"<div>\n<div style=\"margin-left:80px;\n margin-top:15px;\n font-size:20px;\n font-weight:bold;\n \">Ryan Harp </div>\n <div style=\"margin-left:80px;\n margin-top:4px;\n font-size:18px;\n color:grey;\n \">Senior Architect  </div>\n\n <div style=\"margin-left:80px;\n  margin-top:4px;\n font-size:16px;\n \">Manager | Trivandrum</div>\n\n  </div>",
       "connectorLineColor":{
          "red":220,
          "green":189,
@@ -524,7 +524,7 @@
          "centerLeftDistance":0,
          "cornerShape":"CIRCLE",
          "shadow":false,
-         "borderWidth":5,
+         "borderWidth":7,
          "borderColor":{
             "red":19,
             "green":123,
@@ -540,7 +540,7 @@
          "icon":"",
          "size":30
       },
-      "template":"<div>\n<div style=\"margin-left:80px;\n margin-top:15px;\n font-size:20px;\n font-weight:bold;\n \">Ryan Harp </div>\n <div style=\"margin-left:80px;\n margin-top:4px;\n font-size:18px;\n color:grey;\n  \">Senior Architect  </div>\n\n <div style=\"margin-left:80px;\n  margin-top:4px;\n font-size:14px;\n \">Manager | Trivandrum</div>\n\n  </div>",
+      "template":"<div>\n<div style=\"margin-left:80px;\n margin-top:15px;\n font-size:20px;\n font-weight:bold;\n \">Ryan Harp </div>\n <div style=\"margin-left:80px;\n margin-top:4px;\n font-size:18px;\n color:grey;\n  \">Senior Architect  </div>\n\n <div style=\"margin-left:80px;\n  margin-top:4px;\n font-size:16px;\n \">Manager | Trivandrum</div>\n\n  </div>",
       "connectorLineColor":{
          "red":220,
          "green":189,
@@ -580,7 +580,7 @@
          "centerLeftDistance":0,
          "cornerShape":"CIRCLE",
          "shadow":false,
-         "borderWidth":5,
+         "borderWidth":7,
          "borderColor":{
             "red":19,
             "green":123,
@@ -643,7 +643,7 @@
          "centerLeftDistance":0,
          "cornerShape":"CIRCLE",
          "shadow":false,
-         "borderWidth":5,
+         "borderWidth":7,
          "borderColor":{
             "red":19,
             "green":123,
@@ -706,7 +706,7 @@
          "centerLeftDistance":0,
          "cornerShape":"CIRCLE",
          "shadow":false,
-         "borderWidth":5,
+         "borderWidth":7,
          "borderColor":{
             "red":19,
             "green":123,
@@ -722,7 +722,7 @@
          "icon":"",
          "size":30
       },
-      "template":"<div>\n<div style=\"margin-left:80px;\n margin-top:15px;\n font-size:20px;\n font-weight:bold;\n \">Ryan Harp </div>\n <div style=\"margin-left:80px;\n margin-top:4px;\n font-size:18px;\n color:grey;\n  \">Senior Architect  </div>\n\n <div style=\"margin-left:80px;\n  margin-top:4px;\n font-size:14px;\n \">Manager | Trivandrum</div>\n\n  </div>",
+      "template":"<div>\n<div style=\"margin-left:80px;\n margin-top:15px;\n font-size:20px;\n font-weight:bold;\n \">Ryan Harp </div>\n <div style=\"margin-left:80px;\n margin-top:4px;\n font-size:18px;\n color:grey;\n  \">Senior Architect  </div>\n\n <div style=\"margin-left:80px;\n  margin-top:4px;\n font-size:16px;\n \">Manager | Trivandrum</div>\n\n  </div>",
       "connectorLineColor":{
          "red":220,
          "green":189,
@@ -762,7 +762,7 @@
          "centerLeftDistance":0,
          "cornerShape":"CIRCLE",
          "shadow":false,
-         "borderWidth":5,
+         "borderWidth":7,
          "borderColor":{
             "red":19,
             "green":123,
@@ -778,7 +778,7 @@
          "icon":"",
          "size":30
       },
-      "template":"<div>\n<div style=\"margin-left:80px;\n margin-top:15px;\n font-size:20px;\n font-weight:bold;\n \">Ryan Harp </div>\n <div style=\"margin-left:80px;\n margin-top:4px;\n font-size:18px;\n color:grey;\n  \">Senior Architect  </div>\n\n <div style=\"margin-left:80px;\n  margin-top:4px;\n font-size:14px;\n \">Manager | Trivandrum</div>\n\n  </div>",
+      "template":"<div>\n<div style=\"margin-left:80px;\n margin-top:15px;\n font-size:20px;\n font-weight:bold;\n \">Ryan Harp </div>\n <div style=\"margin-left:80px;\n margin-top:4px;\n font-size:18px;\n color:grey;\n  \">Senior Architect  </div>\n\n <div style=\"margin-left:80px;\n  margin-top:4px;\n font-size:16px;\n \">Manager | Trivandrum</div>\n\n  </div>",
       "connectorLineColor":{
          "red":220,
          "green":189,

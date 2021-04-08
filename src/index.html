@@ -551,17 +551,17 @@ function Chart(data){
                 .attr('x','115')
                 .attr('y','-35')
 
-                // nodeEnter
-                // .patternify({
-                //     tag: 'image',
-                //     selector: 'node-icon-image1',
-                //     data: d => [d]
-                // })
-                // .attr('width', d=>  d.data.nodeIconAlert.size)
-                // .attr('height', d=>  d.data.nodeIconAlert.size)
-                // .attr("xlink:href",d=>d.data.nodeIconAlert.icon)
-                // .attr('x','115')
-                // .attr('y','10')
+                nodeEnter
+                .patternify({
+                    tag: 'image',
+                    selector: 'node-icon-image1',
+                    data: d => [d]
+                })
+                .attr('width', d=>  d.data.nodeIconAlert.size)
+                .attr('height', d=>  d.data.nodeIconAlert.size)
+                .attr("xlink:href",d=>d.data.nodeIconAlert.icon)
+                .attr('x','115')
+                .attr('y','10')
           
         //    nodeEnter
         //         .patternify({
