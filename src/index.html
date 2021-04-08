@@ -8,7 +8,7 @@
 <base target="chart-container" href="https://observablehq.com/@paulosobrinho/collapsible-org-chart">
 </head>
 <body translate="no">
-    <div class="container" style="padding-top:20px; border: 1px solid lightgrey;overflow: scroll;">
+    <div class="container" style="padding-top:20px; border: 1px solid lightgrey;overflow: scroll; overflow: auto;">
         <div style="background-color: black; padding-top: 10px; ">
         <span style="color: white; width:20px; height:10px ">EY</span>
         </div>
@@ -16,7 +16,7 @@
         <span class="design" ></span>
       Organizational chart
       </div>
-      <div class="chart-container" style=" padding-top:10px; width:1100px; height:450px "> </div>
+      <div class="chart-container" style=" padding-top:10px; width:1200px; height:450px "> </div>
       </div>
 <app-root></app-root>
 <script src='https://d3js.org/d3.v5.min.js'></script>
@@ -557,38 +557,38 @@ function Chart(data){
                 //     selector: 'node-icon-image1',
                 //     data: d => [d]
                 // })
-                // .attr('width', d=>  d.data.nodeIcon.size)
-                // .attr('height', d=>  d.data.nodeIcon.size)
-                // .attr("xlink:href",d=>d.data.nodeIcon.icon)
+                // .attr('width', d=>  d.data.nodeIconAlert.size)
+                // .attr('height', d=>  d.data.nodeIconAlert.size)
+                // .attr("xlink:href",d=>d.data.nodeIconAlert.icon)
                 // .attr('x','115')
                 // .attr('y','10')
           
-          //  nodeEnter
-          //       .patternify({
-          //           tag: 'text',
-          //           selector: 'node-icon-text-total',
-          //           data: d => [d]
-          //       })
-          //       .text('test')
-          //       .attr('x',d=>-d.width/2+7 )
-          //       .attr('y',d=> d.height/2 - d.data.nodeIcon.size-5)
-          //       //.attr('text-anchor','middle')
-          //       .text(d=>d.data.totalSubordinates + ' Subordinates')
-          //       .attr('fill',attrs.nodeTextFill)
-          //       .attr('font-weight','bold')
+        //    nodeEnter
+        //         .patternify({
+        //             tag: 'text',
+        //             selector: 'node-icon-text-total',
+        //             data: d => [d]
+        //         })
+        //         .text('test')
+        //         .attr('x',d=>-d.width/2+7 )
+        //         .attr('y',d=> d.height/2 - d.data.nodeIcon.size-5)
+        //         //.attr('text-anchor','middle')
+        //         .text(d=>d.data.totalSubordinates + ' Subordinates')
+        //         .attr('fill',attrs.nodeTextFill)
+        //         .attr('font-weight','bold')
           
-          //  nodeEnter
-          //       .patternify({
-          //           tag: 'text',
-          //           selector: 'node-icon-text-direct',
-          //           data: d => [d]
-          //       })
-          //       .text('test')
-          //       .attr('x',d=>-d.width/2+10+d.data.nodeIcon.size)
-          //       .attr('y',d=> d.height/2 - 10)
-          //       .text(d=>d.data.directSubordinates +' Direct ')
-          //       .attr('fill',attrs.nodeTextFill)
-          //       .attr('font-weight','bold')
+        //    nodeEnter
+        //         .patternify({
+        //             tag: 'text',
+        //             selector: 'node-icon-text-direct',
+        //             data: d => [d]
+        //         })
+        //         .text('test')
+        //         .attr('x',d=>-d.width/2+10+d.data.nodeIcon.size)
+        //         .attr('y',d=> d.height/2 - 10)
+        //         .text(d=>d.data.directSubordinates +' Direct ')
+        //         .attr('fill',attrs.nodeTextFill)
+        //         .attr('font-weight','bold')
 
           
             // Node images

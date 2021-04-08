@@ -44,7 +44,11 @@
          "icon":"",
          "size":0
       },
-      "template":"<div>\n <div style=\"margin-left:80px;\n margin-top:15px;\n font-size:25px;\n cursor: pointer;\n font-weight:bold;\n \"> <a href='https://github.com/bumbeishvili/d3-organization-chart' style='text-decoration: none;'> Dylan Robertson </a> </div>\n <div style=\"margin-left:80px;\n color:lightgrey;\n margin-top:4px;\n font-size:18px;\n color:grey;\n \">Delivery Head</div>\n\n <div style=\"margin-left:80px;\n  margin-top:4px;\n  font-size:18px;\n color:grey;\n   \">Sr.Manager | Trivandrum </div>\n\n</div>",
+      "nodeIconAlert":{
+         "icon":"",
+         "size":30
+      },
+      "template":"<div>\n <div style=\"margin-left:80px;\n margin-top:15px;\n font-size:25px;\n cursor: pointer;\n font-weight:bold;\n \"> Dylan Robertson </div>\n <div style=\"margin-left:80px;\n color:lightgrey;\n margin-top:4px;\n font-size:18px;\n color:grey;\n \">Delivery Head</div>\n\n <div style=\"margin-left:80px;\n  margin-top:4px;\n  font-size:18px;\n   \">Sr.Manager | Trivandrum </div>\n\n</div>",
       "connectorLineColor":{
          "red":220,
          "green":189,
@@ -63,7 +67,7 @@
       "width":327,
       "height":100,
       "borderWidth":1,
-      "borderRadius":5,
+      "borderRadius":7,
       "borderColor":{
          "red":15,
          "green":140,
@@ -98,12 +102,13 @@
             "alpha":1
          }
       },
-      "nodeIcon1":{
+      "nodeIconAlert":{
          "icon":"",
          "size":30
       },
+     
     "nodeIcon":{
-         "icon":"https://raw.githubusercontent.com/RajaGds/OrgChart/main/images/alert.jpg",
+         "icon":"https://raw.githubusercontent.com/RajaGds/OrgChart/main/images/tree.png",
          "size":30
       },
       "template":"<div>\n                  <div style=\"margin-left:80px;\n margin-top:15px;\n font-size:20px;\n font-weight:bold;\n \">Gregor Maier </div>\n <div style=\"margin-left:80px;\n margin-top:4px;\n font-size:18px;\n color:grey;\n \">Senior Architect  </div>\n\n <div style=\"margin-left:80px;\n  margin-top:4px;\n font-size:14px;\n \">Manager | Bangalore</div>\n\n  </div>",
@@ -123,7 +128,7 @@
       "width":327,
       "height":100,
       "borderWidth":1,
-      "borderRadius":5,
+      "borderRadius":7,
       "borderColor":{
          "red":15,
          "green":140,
@@ -162,6 +167,10 @@
          "icon":"https://raw.githubusercontent.com/RajaGds/OrgChart/main/images/tree.png",
          "size":30
       },
+      "nodeIconAlert":{
+         "icon":"https://raw.githubusercontent.com/RajaGds/OrgChart/main/images/alert.jpg",
+         "size":30
+      },
       "template":"<div>\n                  <div style=\"margin-left:80px;\n margin-top:15px;\n font-size:20px;\n font-weight:bold;\n \">Jeo Mills </div>\n <div style=\"margin-left:80px;\n margin-top:4px;\n font-size:18px;\n color:grey;\n \">Senior Architect  </div>\n\n <div style=\"margin-left:80px;\n  margin-top:4px;\n font-size:14px;\n \">Manager | Trivandrum</div>\n\n  </div>",
       "connectorLineColor":{
          "red":220,
@@ -179,7 +188,7 @@
       "width":330,
       "height":100,
       "borderWidth":1,
-      "borderRadius":5,
+      "borderRadius":7,
       "borderColor":{
          "red":15,
          "green":140,
@@ -219,6 +228,10 @@
          "icon":"https://raw.githubusercontent.com/RajaGds/OrgChart/main/images/tree.png",
          "size":30
       },
+      "nodeIconAlert":{
+         "icon":"",
+         "size":30
+      },
       "template":"<div>\n<div style=\"margin-left:80px;\n margin-top:15px;\n font-size:20px;\n font-weight:bold;\n \">Ryan Harp </div>\n <div style=\"margin-left:80px;\n margin-top:4px;\n font-size:18px;\n color:grey;\n \">Senior Architect  </div>\n\n <div style=\"margin-left:80px;\n  margin-top:4px;\n font-size:14px;\n \">Manager | Trivandrum</div>\n\n  </div>",
       "connectorLineColor":{
          "red":220,
@@ -238,7 +251,7 @@
       "width":330,
       "height":100,
       "borderWidth":1,
-      "borderRadius":5,
+      "borderRadius":7,
       "borderColor":{
          "red":15,
          "green":140,
@@ -275,6 +288,10 @@
          
       },
       "nodeIcon":{
+         "icon":"https://raw.githubusercontent.com/RajaGds/OrgChart/main/images/tree.png",
+         "size":30
+      },
+      "nodeIconAlert":{
          "icon":"",
          "size":30
       },
@@ -297,7 +314,7 @@
       "width":330,
       "height":100,
       "borderWidth":1,
-      "borderRadius":5,
+      "borderRadius":7,
       "borderColor":{
          "red":15,
          "green":140,
@@ -334,6 +351,10 @@
          }
       },
       "nodeIcon":{
+         "icon":"https://raw.githubusercontent.com/RajaGds/OrgChart/main/images/tree.png",
+         "size":30
+      },
+      "nodeIconAlert":{
          "icon":"",
          "size":30
       },
@@ -356,7 +377,7 @@
       "width":330,
       "height":100,
       "borderWidth":1,
-      "borderRadius":5,
+      "borderRadius":7,
       "borderColor":{
          "red":15,
          "green":140,
@@ -393,6 +414,10 @@
          
       },
       "nodeIcon":{
+         "icon":"https://raw.githubusercontent.com/RajaGds/OrgChart/main/images/tree.png",
+         "size":30
+      },
+      "nodeIconAlert":{
          "icon":"",
          "size":30
       },
@@ -415,7 +440,7 @@
       "width":330,
       "height":100,
       "borderWidth":1,
-      "borderRadius":5,
+      "borderRadius":7,
       "borderColor":{
          "red":15,
          "green":140,
@@ -452,6 +477,10 @@
          }
       },
       "nodeIcon":{
+         "icon":"https://raw.githubusercontent.com/RajaGds/OrgChart/main/images/tree.png",
+         "size":30
+      },
+      "nodeIconAlert":{
          "icon":"",
          "size":30
       },
@@ -474,7 +503,7 @@
       "width":340,
       "height":143,
       "borderWidth":1,
-      "borderRadius":5,
+      "borderRadius":7,
       "borderColor":{
          "red":15,
          "green":140,
@@ -504,6 +533,10 @@
          }
       },
       "nodeIcon":{
+         "icon":"https://raw.githubusercontent.com/RajaGds/OrgChart/main/images/tree.png",
+         "size":30
+      },
+      "nodeIconAlert":{
          "icon":"",
          "size":30
       },
@@ -526,7 +559,7 @@
       "width":330,
       "height":100,
       "borderWidth":1,
-      "borderRadius":5,
+      "borderRadius":7,
       "borderColor":{
          "red":15,
          "green":140,
@@ -563,6 +596,10 @@
          
       },
       "nodeIcon":{
+         "icon":"https://raw.githubusercontent.com/RajaGds/OrgChart/main/images/tree.png",
+         "size":30
+      },
+      "nodeIconAlert":{
          "icon":"",
          "size":30
       },
@@ -585,7 +622,7 @@
       "width":330,
       "height":100,
       "borderWidth":1,
-      "borderRadius":5,
+      "borderRadius":7,
       "borderColor":{
          "red":15,
          "green":140,
@@ -622,6 +659,10 @@
          
       },
       "nodeIcon":{
+         "icon":"https://raw.githubusercontent.com/RajaGds/OrgChart/main/images/tree.png",
+         "size":30
+      },
+      "nodeIconAlert":{
          "icon":"",
          "size":30
       },
@@ -644,7 +685,7 @@
       "width":340,
       "height":143,
       "borderWidth":1,
-      "borderRadius":5,
+      "borderRadius":7,
       "borderColor":{
          "red":15,
          "green":140,
@@ -674,6 +715,10 @@
          }
       },
       "nodeIcon":{
+         "icon":"https://raw.githubusercontent.com/RajaGds/OrgChart/main/images/tree.png",
+         "size":30
+      },
+      "nodeIconAlert":{
          "icon":"",
          "size":30
       },
@@ -696,7 +741,7 @@
       "width":340,
       "height":143,
       "borderWidth":1,
-      "borderRadius":5,
+      "borderRadius":7,
       "borderColor":{
          "red":15,
          "green":140,
@@ -726,6 +771,10 @@
          }
       },
       "nodeIcon":{
+         "icon":"https://raw.githubusercontent.com/RajaGds/OrgChart/main/images/tree.png",
+         "size":30
+      },
+      "nodeIconAlert":{
          "icon":"",
          "size":30
       },
