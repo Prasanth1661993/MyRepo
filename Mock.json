@@ -34,9 +34,9 @@
          },
       "borderWidth":5,
          "borderColor":{
-            "red":146,
-            "green":43,
-            "blue":115,
+            "red":255,
+            "green":230,
+            "blue":0,
             "alpha":1
          }
       },
@@ -44,7 +44,7 @@
          "icon":"",
          "size":0
       },
-      "template":"<div>\n                  <div style=\"margin-left:70px;\n margin-top:10px;\n font-size:20px;\n font-weight:bold;\n \">Ryan Harp </div>\n <div style=\"margin-left:70px;\n margin-top:3px;\n font-size:16px;\n \">Senior Architect  </div>\n\n <div style=\"margin-left:70px;\n  margin-top:3px;\n font-size:14px;\n \">Manager | Trivandrum</div>\n\n  </div>",
+      "template":"<div>\n <div style=\"margin-left:80px;\n margin-top:15px;\n font-size:25px;\n cursor: pointer;\n font-weight:bold;\n \"> <a href='https://github.com/bumbeishvili/d3-organization-chart' style='text-decoration: none;'> Dylan Robertson </a> </div>\n <div style=\"margin-left:80px;\n color:lightgrey;\n margin-top:4px;\n font-size:16px;\n \">Delivery Head</div>\n\n <div style=\"margin-left:80px;\n  margin-top:3px;\n  font-size:16px;\n   \">Sr.Manager | Trivandrum </div>\n\n</div>",
       "connectorLineColor":{
          "red":220,
          "green":189,

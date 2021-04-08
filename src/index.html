@@ -659,8 +659,8 @@ function Chart(data){
 
             nodeUpdate.select('.node-image-rect')
                 .attr('fill', d => `url(#${d.id})`)
-                .attr('width', '85')
-                .attr('height', '75')
+                .attr('width', '100')
+                .attr('height', '95')
                 .attr('stroke', d => d.imageBorderColor)
                 .attr('stroke-width', d => d.imageBorderWidth)
                 .attr('rx', d => d.imageRx)
@@ -672,8 +672,8 @@ function Chart(data){
 
             // Update  node attributes and style
             nodeUpdate.select('.node-rect')
-                .attr('width', '327')
-                .attr('height', '100')
+                .attr('width', '387')
+                .attr('height', '120')
                 .attr('x', d => -d.data.width / 2)
                 .attr('y', d => -d.data.height / 2)
                 .attr('rx', '50px')
