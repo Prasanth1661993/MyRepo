@@ -643,7 +643,9 @@ function Chart(data){
                 .attr('opacity', 1)
                 .duration(attrs.duration)
                 .attr("transform", function(d) {
-                    return "translate(" + d.x + "," + d.y + ")";
+                    let x = d.x;
+                    let y = d.y + 10;
+                    return `translate(${x},${y})` ;
                 })
                 .attr('opacity', 1)
 
