@@ -6,6 +6,8 @@ import {  OnChanges,
   ElementRef } from '@angular/core';
 // import * as d3 from "d3";
 
+// declare function Chart(data:any) : any;
+
 // import  TreeChart from "d3-org-chart";
 
 @Component({
@@ -20,18 +22,23 @@ export class DonutchartsComponent implements OnInit, OnChanges {
   constructor() { }
   
   ngOnInit(): void {
+    // console.log("Data",this.data)
   }
   ngAfterViewInit() {
     // if (!this.chart) {
-    //   this.chart = new TreeChart();
-    // }
-    this.updateChart();
-  }
+  //     console.log("ngAfterViewInit",this.data)
+  //     // this.chart = Chart(this.data);
+  //     this.chart = new TreeChart;
+  //     console.log("Data", this.chart)
+  //   // }
+  //   this.updateChart();
+   }
 
   ngOnChanges() {
     this.updateChart();
   }
   updateChart() {
+    // console.log("updateChart",this.data)
     // if (!this.data) {
     //   return; 
     // }
@@ -39,7 +46,7 @@ export class DonutchartsComponent implements OnInit, OnChanges {
     //   return; 
     // }
     // this.chart
-    //   .container(this.chartContainer.nativeElement)
+    //   .container(this.chartContainer)
     //   .data(this.data)
     //   .svgWidth(500)
     //   .initialZoom(0.4)
