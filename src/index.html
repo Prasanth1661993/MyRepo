@@ -8,16 +8,16 @@
 <title> D3 V5 Org Chart</title>
 </head>
 <body translate="no">
-    <div class="container" style="padding-top:20px; border: 1px solid lightgrey; overflow: auto;">
+    <!-- <div class="container" style="padding-top:20px; border: 1px solid lightgrey; overflow: auto;">
         <div style="background-color: black; padding-top: 10px; ">
         <span style="color: white; width:20px; height:10px ">EY</span>
-        </div>
+        </div> -->
         
         <app-root></app-root>
-      <div class="chart-container" style=" padding-top:10px; width:1100px; height:400px "> </div>
-      </div>
+      <!-- <div class="chart-container" style=" padding-top:10px; width:1100px; height:400px "> </div> -->
+      <!-- </div> -->
 
-      <script id="rendered-js">
+      <!-- <script id="rendered-js">
         //   d3.json('https://raw.githubusercontent.com/Prasanth1661993/MyRepo/master/Mock.json')
         //d3.json('https://raw.githubusercontent.com/RajaGds/OrgChart/main/orgdata.json')
          d3.json('https://raw.githubusercontent.com/Prasanth1661993/MyRepo/master/Mock.json')
@@ -545,6 +545,7 @@
                         })
                         .attr('width', d=>  d.data.nodeIcon.size)
                         .attr('height', d=>  d.data.nodeIcon.size)
+                        .attr('border-radius', '50%')
                         .attr("xlink:href",d=>d.data.nodeIcon.icon)
                         .attr('x','152')
                         .attr('y','-35')
@@ -829,7 +830,7 @@
         }
         
         
-        </script>
+        </script> -->
 
 </body>
 </html>

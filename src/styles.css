@@ -180,3 +180,7 @@
 .form-control::placeholder  {
   font-family: FontAwesome;
 }
+
+.image{
+  border-radius: 50%;
+}
