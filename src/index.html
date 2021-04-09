@@ -371,6 +371,10 @@
                             d.data.nodeImage.cornerShape.toLowerCase() == "rounded") {
                             imageRx = Math.min(imageWidth, imageHeight) / 6;
                         }
+                        if (d.data.nodeIcon &&
+                            d.data.nodeIcon.cornerShape.toLowerCase() == "circle") {
+                            imageRx = Math.max(imageWidth, imageHeight);
+                        }
                         return Object.assign(d, {
                             imageWidth,
                             imageHeight,
@@ -547,7 +551,11 @@
                         .attr("xlink:href",d=>d.data.nodeIcon.icon)
                         .attr('x','152')
                         .attr('y','-35')
-        
+                        .attr('stroke', d => d.data.connectorLineColor)
+                        .attr('stroke-width', d => d.imageBorderWidth)
+                        .attr('rx', '100')
+
+                     
                         nodeEnter
                         .patternify({
                             tag: 'image',
