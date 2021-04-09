@@ -371,10 +371,7 @@
                             d.data.nodeImage.cornerShape.toLowerCase() == "rounded") {
                             imageRx = Math.min(imageWidth, imageHeight) / 6;
                         }
-                        if (d.data.nodeIcon &&
-                            d.data.nodeIcon.cornerShape.toLowerCase() == "circle") {
-                            imageRx = Math.max(imageWidth, imageHeight);
-                        }
+                        
                         return Object.assign(d, {
                             imageWidth,
                             imageHeight,
