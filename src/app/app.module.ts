@@ -11,7 +11,7 @@ import { ArHomeService } from './Services/ar-home.service';
 import { HttpClientHeaders } from './common/http-headers/http-client-headers';
 import { HttpClientModule } from '@angular/common/http';
 import { HttpClient } from '@angular/common/http';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { IgxHierarchicalGridModule } from 'igniteui-angular';
 
@@ -24,7 +24,7 @@ import { PiechartsComponent } from './piecharts/piecharts.component';
 import { DonutchartsComponent } from './donutcharts/donutcharts.component';
 import { BarchartsComponent } from './barcharts/barcharts.component';
 import { VerticalChartComponent } from './vertical-chart/vertical-chart.component'
-
+// import {MatFormFieldModule, MatAutocompleteModule, MatInputModule} from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -48,6 +48,7 @@ import { VerticalChartComponent } from './vertical-chart/vertical-chart.componen
     IgxHierarchicalGridModule,
     IgxGridModule,
     ChartsModule
+    
   ],
   providers: [,
     ArHomeService,

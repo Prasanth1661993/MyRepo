@@ -112,7 +112,7 @@
          "size":30,
          "cornerShape":"CIRCLE"
       },
-      "template":"<div>\n                  <div style=\"margin-left:80px;\n margin-top:15px;\n font-size:20px;\n font-weight:bold;\n \">Gregor Maier </div>\n <div style=\"margin-left:80px;\n margin-top:4px;\n font-size:18px;\n color:grey;\n \">Senior Architect  </div>\n\n <div style=\"margin-left:80px;\n  margin-top:4px;\n font-size:16px;\n \">Manager | Bangalore</div>\n\n  </div>",
+      "template":"<div>\n<div style=\"margin-left:80px;\n margin-top:15px;\n font-size:20px;\n font-weight:bold;\n \">Gregor Maier </div>\n <div style=\"margin-left:80px;\n margin-top:4px;\n font-size:18px;\n color:grey;\n \">Senior Architect  </div>\n\n <div style=\"margin-left:80px;\n  margin-top:4px;\n font-size:16px;\n \">Manager | Bangalore</div>\n\n  </div>",
       "connectorLineColor":{
          "red":187,
          "green":187,

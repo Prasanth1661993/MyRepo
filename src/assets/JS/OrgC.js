@@ -512,6 +512,8 @@ function myTest(data){
                 .attr("xlink:href",d=>d.data.nodeIcon.icon)
                 .attr('x','152')
                 .attr('y','-35')
+                .attr('rx','100')
+                .attr('border','2px solid grey')
 
                 nodeEnter
                 .patternify({
@@ -724,8 +726,8 @@ function myTest(data){
 
         d3.select(window).on('resize.' + attrs.id, function() {
             var containerRect = container.node().getBoundingClientRect();
-            //	if (containerRect.width > 0) attrs.svgWidth = containerRect.width;
-            //	main();
+            	// if (containerRect.width > 0) attrs.svgWidth = containerRect.width;
+            	// main();
         });
     };
     d3.selection.prototype.patternify = function(params) {
