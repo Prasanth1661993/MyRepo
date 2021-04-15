@@ -92,7 +92,7 @@ export class DonutchartsComponent implements OnInit, OnChanges {
     this.chart
       .container(this.chartContainer.nativeElement)
       .data(this.OrgData)
-      .svgWidth(800)
+      .svgWidth(1200)
       .initialZoom(0.7)
       .onNodeClick(d => console.log(d + " node clicked"))
       .render();
@@ -175,12 +175,15 @@ export class DonutchartsComponent implements OnInit, OnChanges {
             "directSubordinates": 0,
             "totalSubordinates": 0
           };
-          let template1 = "<div class=\"col-md-12\">\n <div style=\"margin-left:80px;\n margin-top:15px;\n font-size:25px;\n cursor: pointer;\n font-weight:bold;\n \">";
+          
+          
+          
+          let template1 = "<div class=\"col-md-12\">\n <div style=\"margin-left:80px;\n margin-top:15px;\n font-size:25px;\n cursor: pointer;\n font-weight:bold;\ntext-align: left;\n font: normal normal bold 25px/25px EYInterstate;\nletter-spacing: 0px;\ncolor: #333333;\n \">";
 
           //  Dylan Robertson
-          let template2 = "</div>\n <div style=\"margin-left:80px;\n color:lightgrey;\n margin-top:4px;\n font-size:18px;\n color:grey;\n \">";
+          let template2 = "</div>\n <div style=\"margin-left:80px;\n color:lightgrey;\n margin-top:4px;\n font-size:20px;\n color:grey;\n \">";
           // Delivery Head
-          let template3 = "</div>\n\n <div style=\"margin-left:80px;\n  margin-top:4px;\n  font-size:18px;\n   \">";
+          let template3 = "</div>\n\n <div style=\"margin-left:80px;\n  margin-top:4px;\n  font-size:20px;\n   \">";
           // Sr.Manager | Trivandrum 
           let template4 = "</div>\n\n</div>";
           structJson.template = template1 + item.name + template2 + item.designation + template3 + item.role +' '+ '|'+' ' + item.loaction + template4;
@@ -267,10 +270,13 @@ export class DonutchartsComponent implements OnInit, OnChanges {
           structJson.parentNodeId = item.parentNodeId;
           structJson.expanded = item.expanded;
           var orgIcon = "https://raw.githubusercontent.com/RajaGds/OrgChart/main/images/tree.png";
+          var warnIcon = "https://raw.githubusercontent.com/RajaGds/OrgChart/main/images/alert.jpg"
           if (item.isChild) {
             structJson.nodeIcon.icon = orgIcon;
           }
-          
+          if(item.isIndication){
+            structJson.nodeIconAlert.icon = warnIcon;
+          }
           this.colorData.forEach(colorCode =>{
             if(checkId > 4){
               checkId = 0;

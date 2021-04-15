@@ -510,10 +510,10 @@ function myTest(data){
                 .attr('width', d=>  d.data.nodeIcon.size)
                 .attr('height', d=>  d.data.nodeIcon.size)
                 .attr("xlink:href",d=>d.data.nodeIcon.icon)
-                .attr('x','152')
+                .attr('x','170')
                 .attr('y','-35')
                 .attr('rx','100')
-                .attr('border','2px solid grey')
+                .attr('border','2px')
 
                 nodeEnter
                 .patternify({
@@ -524,7 +524,7 @@ function myTest(data){
                 .attr('width', d=>  d.data.nodeIconAlert.size)
                 .attr('height', d=>  d.data.nodeIconAlert.size)
                 .attr("xlink:href",d=>d.data.nodeIconAlert.icon)
-                .attr('x','152')
+                .attr('x','170')
                 .attr('y','10')
           
         //    nodeEnter

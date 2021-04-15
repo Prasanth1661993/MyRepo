@@ -12,8 +12,7 @@
       "compliance":false,
       "isChild": true,
       "isParentNode": true,
-      "expanded": false,
- "isIndication":false
+      "expanded": false
    },
    {
     "nodeId":"0-2",
@@ -28,8 +27,7 @@
     "compliance":false,
     "isChild": true,
     "isParentNode": false,
-      "expanded": false,
- "isIndication":false
+      "expanded": false
     
  },
  {
@@ -45,8 +43,7 @@
     "compliance":false,
     "isChild": true,
     "isParentNode": false,
-      "expanded": true,
-      "isIndication":true
+      "expanded": true
  },
  {
     "nodeId":"0-4",
@@ -59,14 +56,13 @@
     "gpn":"IN010M8888",
     "emainID":"someone@gmail.com",
     "compliance":false,
-    "isChild": false,
+    "isChild": true,
     "isParentNode": false,
-      "expanded": false,
- "isIndication":false
+      "expanded": false
  },
  {
     "nodeId":"0-5",
-    "parentNodeId":"0-3",
+    "parentNodeId":"0-1",
     "name":"Leonel Pattison",
     "designation":"Senior Manager",
     "role":"Sr.Manager",
@@ -77,12 +73,11 @@
     "compliance":false,
     "isChild": false,
     "isParentNode": false,
-    "expanded": true,
-    "isIndication":false
+      "expanded": true
  },
  {
     "nodeId":"0-6",
-    "parentNodeId":"0-3",
+    "parentNodeId":"0-1",
     "name":"Nicholas Johnson",
     "designation":"Senior Manager",
     "role":"Sr.Manager",
@@ -93,12 +88,11 @@
     "compliance":false,
     "isChild": false,
     "isParentNode": false,
-    "expanded": false,
-    "isIndication":false
+      "expanded": false
  },
  {
     "nodeId":"0-7",
-    "parentNodeId":"0-3",
+    "parentNodeId":"0-1",
     "name":"Gregor Pattison",
     "designation":"Senior Manager",
     "role":"Sr.Manager",
@@ -109,12 +103,11 @@
     "compliance":false,
     "isChild": false,
     "isParentNode": false,
-    "expanded": false,
-    "isIndication":false
+      "expanded": false
  },
  {
     "nodeId":"0-8",
-    "parentNodeId":"0-2",
+    "parentNodeId":"0-1",
     "name":"Deyone Selvon",
     "designation":"Senior Manager",
     "role":"Sr.Manager",
@@ -125,8 +118,7 @@
     "compliance":false,
     "isChild": false,
     "isParentNode": false,
-    "expanded": false,
-    "isIndication":false
+      "expanded": false
  },
  {
     "nodeId":"0-9",
@@ -141,12 +133,11 @@
     "compliance":false,
     "isChild": false,
     "isParentNode": false,
-   "expanded": false,
-   "isIndication":false
+      "expanded": false
  },
  {
     "nodeId":"0-10",
-    "parentNodeId":"0-2",
+    "parentNodeId":"0-4",
     "name":"Major Pattison",
     "designation":"Senior Manager",
     "role":"Sr.Manager",
@@ -157,7 +148,6 @@
     "compliance":false,
     "isChild": false,
     "isParentNode": false,
-   "expanded": false,
-   "isIndication":false
+      "expanded": false
  }
  ]

@@ -9,6 +9,9 @@ import { Observable } from 'rxjs';
 export class ArHomeService{
 
     private mockJson = 'assets/JSON/Mock.json';
+    private mockJson1 = 'assets/JSON/Mock1.json';
+    private mockJson2 = 'assets/JSON/Mock2.json';
+    private mockJson3 = 'assets/JSON/Mock3.json';
     
     private headers: HttpHeaders = new HttpHeaders({ 'Content-Type': 'application/json' });
 

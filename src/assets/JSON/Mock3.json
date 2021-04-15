@@ -1,0 +1,33 @@
+[
+   {
+      "nodeId":"0-1",
+      "parentNodeId":null,
+      "name":"Dylan Robertson",
+      "designation":"Delivery Head",
+      "role":"Sr.Manager",
+      "loaction":"Trivandrum",
+      "image":"https://raw.githubusercontent.com/RajaGds/OrgChart/main/images/1_dylan.png",
+      "gpn":"IN010M8888",
+      "emainID":"someone@gmail.com",
+      "compliance":false,
+      "isChild": true,
+      "isParentNode": true,
+      "expanded": false
+   },
+   {
+    "nodeId":"0-2",
+    "parentNodeId":"0-1",
+    "name":"Harry Nicholson",
+    "designation":"Senior Architect",
+    "role":"Sr.Manager",
+    "loaction":"Trivandrum",
+    "image":"https://raw.githubusercontent.com/bumbeishvili/Assets/master/Projects/D3/Organization%20Chart/female.jpg",
+    "gpn":"IN010M8888",
+    "emainID":"someone@gmail.com",
+    "compliance":false,
+    "isChild": true,
+    "isParentNode": false,
+      "expanded": false
+    
+ }
+ ]
