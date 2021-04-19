@@ -4,17 +4,13 @@ import {
   OnInit,
   Input,
   ViewChild,
-  ElementRef
+  ElementRef,
+  EventEmitter,
+  Output
 } from '@angular/core';
-import { exit } from 'process';
+import { Router } from '@angular/router';
 import { ArHomeService } from '../Services/ar-home.service';
-//  import * as d3 from "d3";
-
-
-// declare function Chart() : any;
 declare function myTest(data: any): any;
-//  import TreeChart from "../../assets/JS/OrgC.js"
-// import  TreeChart from "d3-org-chart";
 
 @Component({
   selector: 'app-donutcharts',
@@ -24,65 +20,48 @@ declare function myTest(data: any): any;
 export class DonutchartsComponent implements OnInit, OnChanges {
   @ViewChild("chartContainer") chartContainer: ElementRef;
   @Input() data: any[];
+  @Output() newItemEvent = new EventEmitter<boolean>();
+  @Output() nodeData = new EventEmitter<object>();
   chart;
   getChartState: any;
   rawData = [];
   OrgData = [];
   colorData = [
-    {id:1,red : 53,green:164,blue:232},
-    {id:2,red : 52,green:199,blue:104},
-    {id:3,red : 146,green:43,blue:115},
-    {id:4,red : 19,green:123,blue:128}
+    { id: 1, red: 53, green: 164, blue: 232 },
+    { id: 2, red: 52, green: 199, blue: 104 },
+    { id: 3, red: 146, green: 43, blue: 115 },
+    { id: 4, red: 19, green: 123, blue: 128 }
   ];
   searchword;
   searchedData = [];
   content = [];
-  constructor(private arHomeService: ArHomeService) { }
+  isNodeIconSelected: boolean = false;
+  isNodeSelected: boolean = false;
+  constructor(private arHomeService: ArHomeService,private router : Router) { }
 
   ngOnInit() {
-
+    console.log("Inside ngOnInit")
+    this.ngOnChanges();
   }
 
   ngAfterViewInit() {
+    console.log("Inside ngAfterViewInit")
     // this.constructJsonData();
     if (!this.chart) {
       this.chart = myTest(this.OrgData);
       // this.chart = new TreeChart;
     }
     this.updateChart();
+    
   }
 
   ngOnChanges() {
+    console.log("Inside ngOnChanges")
     this.constructJsonData();
     this.updateChart();
   }
-
-  searchThis(){
-    this.content = this.rawData
-    console.log(this.searchword)
-    let searchArray= [];
-    var word =this.searchword;
-    if (this.searchword) {
-      this.content = this.content.filter(function (ele, i, array) {
-        let arrayelement = ele.name;
-        if(arrayelement.includes(word)){
-        searchArray.push(arrayelement);
-      }
-      })
-      this.searchedData = searchArray;
-    }
-    else {
-      this.searchedData = [];
-      console.log(this.content)
-    }
-    console.log(this.content)
-  }
-  checkSelectedSearch(selectedName){
-    window.alert("Hi, You have selected "+selectedName);
-
-  }
   updateChart() {
-
+    console.log("Inside updateChart")
     if (!this.OrgData) {
       return;
     }
@@ -94,19 +73,87 @@ export class DonutchartsComponent implements OnInit, OnChanges {
       .data(this.OrgData)
       .svgWidth(1200)
       .initialZoom(0.7)
-      .onNodeClick(d => console.log(d + " node clicked"))
+      .onNodeClick(d => this.redirectMe(d))
       .render();
 
   }
-  constructJsonData() {
+  redirectMe(selectedNode) {
+    console.log("type of ", typeof (selectedNode))
 
-    this.arHomeService.getMockData().then(
-      data => {
-        data.forEach(element => {
-          this.rawData.push(element);
-        });
-      }
-    );
+    var checkType = typeof (selectedNode);
+    if (checkType == 'string') {
+      this.isNodeSelected = true;
+      console.log("inside string", selectedNode)
+      this.rawData.forEach(node => {
+        if (selectedNode == node.nodeId) {
+          let nodeData = node;
+          this.newItemEvent.emit(true);
+          this.nodeData.emit(nodeData)
+  // this.router.navigate(['bar']);
+  
+        }
+      });
+    } else {
+     
+      this.isNodeIconSelected = true;
+      // this.ngOnChanges();
+      // this.constructJsonData();
+      // this.ngAfterViewInit();
+      // this.updateChart();
+      
+    }
+
+  }
+  searchThis() {
+    this.content = this.rawData
+    console.log(this.searchword)
+    let searchArray = [];
+    var word = this.searchword;
+    if (this.searchword) {
+      this.content = this.content.filter(function (ele, i, array) {
+        let arrayelement = ele.name;
+        if (arrayelement.includes(word)) {
+          searchArray.push(arrayelement);
+        }
+      })
+      this.searchedData = searchArray;
+    }
+    else {
+      this.searchedData = [];
+      console.log(this.content)
+    }
+    console.log(this.content)
+  }
+  checkSelectedSearch(name){
+    window.alert("Hi , You have selected"+ name);
+  }
+
+  constructJsonData() {
+    console.log("Inside constructJsonData")
+    if (!this.isNodeIconSelected) {
+      // this.arHomeService.getMockData().then(
+      //   data => {
+        if(this.data){
+          this.data.forEach(element => {
+            this.rawData.push(element);
+          });
+        }
+      //   }
+      // );
+    }else{
+      this.rawData = [];
+      let selectedData = [];
+      this.arHomeService.getMockDataSelected().then(
+        data => {
+          data.forEach(element => {
+            selectedData.push(element);
+
+          });
+           this.rawData = selectedData;
+        
+        }
+      );
+    }
     let collectiveStuctData = [];
     if (this.rawData != null) {
       let checkId = 1;
@@ -116,6 +163,8 @@ export class DonutchartsComponent implements OnInit, OnChanges {
           {
             "nodeId": "",
             "parentNodeId": null,
+            "nodeWidth": 400,
+            "nodeHeight": 120,
             "width": 360,
             "height": 100,
             "borderWidth": 1,
@@ -153,7 +202,7 @@ export class DonutchartsComponent implements OnInit, OnChanges {
                 "blue": 0,
                 "alpha": 1
               }
-            } ,
+            },
             "nodeIcon": {
               "icon": "",
               "size": 0
@@ -175,27 +224,26 @@ export class DonutchartsComponent implements OnInit, OnChanges {
             "directSubordinates": 0,
             "totalSubordinates": 0
           };
-          
-          
-          
-          let template1 = "<div class=\"col-md-12\">\n <div style=\"margin-left:80px;\n margin-top:15px;\n font-size:25px;\n cursor: pointer;\n font-weight:bold;\ntext-align: left;\n font: normal normal bold 25px/25px EYInterstate;\nletter-spacing: 0px;\ncolor: #333333;\n \">";
+          var template1 = "<div class=\"col-md-12\">\n <div style=\"margin-left:80px;\n margin-top:15px;\n font-size:25px;\n cursor: pointer;\n font-weight:bold;\ntext-align: left;\n font: normal normal bold 25px/25px EYInterstate;\nletter-spacing: 0px;\ncolor: #333333;\n \">";
 
           //  Dylan Robertson
-          let template2 = "</div>\n <div style=\"margin-left:80px;\n color:lightgrey;\n margin-top:4px;\n font-size:20px;\n color:grey;\n \">";
+          var template2 = "</div>\n <div style=\"margin-left:80px;\n color:lightgrey;\n margin-top:4px;\n font-size:20px;\n color:grey;\n \">";
           // Delivery Head
-          let template3 = "</div>\n\n <div style=\"margin-left:80px;\n  margin-top:4px;\n  font-size:20px;\n   \">";
+          var template3 = "</div>\n\n <div style=\"margin-left:80px;\n  margin-top:4px;\n  font-size:20px;\n   \">";
           // Sr.Manager | Trivandrum 
-          let template4 = "</div>\n\n</div>";
-          structJson.template = template1 + item.name + template2 + item.designation + template3 + item.role +' '+ '|'+' ' + item.loaction + template4;
+          var template4 = "</div>\n\n</div>";
+          structJson.template = template1 + item.name + template2 + item.designation + template3 + item.role + ' ' + '|' + ' ' + item.loaction + template4;
           structJson.nodeImage.url = item.image;
           structJson.nodeId = item.nodeId;
           structJson.parentNodeId = item.parentNodeId;
           collectiveStuctData.push(structJson)
         } else {
-          var structJson =
+          let structJson =
           {
             "nodeId": "",
             "parentNodeId": "",
+            "nodeWidth": 387,
+            "nodeHeight": 120,
             "width": 327,
             "height": 100,
             "borderWidth": 1,
@@ -256,15 +304,15 @@ export class DonutchartsComponent implements OnInit, OnChanges {
             "expanded": false
           };
 
-          let template1 = "<div class=\"col-md-12\">\n<div style=\"margin-left:90px;\n margin-top:15px;\n font-size:20px;\n font-weight:bold;\n \">";
+          var template1 = "<div class=\"col-md-12\">\n<div (click)='redirectMe(item)'  style=\"margin-left:90px;\n margin-top:15px;\n font-size:20px;\n font-weight:bold;\n \">";
 
           //  Dylan Robertson
-          let template2 = "</div>\n <div style=\"margin-left:90px;\n margin-top:4px;\n font-size:18px;\n color:grey;\n \">";
+          var template2 = "</div>\n <div style=\"margin-left:90px;\n margin-top:4px;\n font-size:18px;\n color:grey;\n \">";
           // Delivery Head
-          let template3 = "</div>\n\n <div style=\"margin-left:90px;\n  margin-top:4px;\n font-size:16px;\n \">";
+          var template3 = "</div>\n\n <div style=\"margin-left:90px;\n  margin-top:4px;\n font-size:16px;\n \">";
           // Sr.Manager | Trivandrum 
-          let template4 = "</div>\n\n  </div>";
-          structJson.template = template1 + item.name + template2 + item.designation + template3 + item.role +' '+ '|'+' ' + item.loaction + template4;
+          var template4 = "</div>\n\n  </div>";
+          structJson.template = template1 + item.name + template2 + item.designation + template3 + item.role + ' ' + '|' + ' ' + item.loaction + template4;
           structJson.nodeImage.url = item.image;
           structJson.nodeId = item.nodeId;
           structJson.parentNodeId = item.parentNodeId;
@@ -274,18 +322,18 @@ export class DonutchartsComponent implements OnInit, OnChanges {
           if (item.isChild) {
             structJson.nodeIcon.icon = orgIcon;
           }
-          if(item.isIndication){
+          if (item.compliance) {
             structJson.nodeIconAlert.icon = warnIcon;
           }
-          this.colorData.forEach(colorCode =>{
-            if(checkId > 4){
+          this.colorData.forEach(colorCode => {
+            if (checkId > 4) {
               checkId = 0;
             }
-            if(checkId == colorCode.id){
-            structJson.nodeImage.borderColor.red = colorCode.red;
-            structJson.nodeImage.borderColor.green = colorCode.green;
-            structJson.nodeImage.borderColor.blue = colorCode.blue;
-          } 
+            if (checkId == colorCode.id) {
+              structJson.nodeImage.borderColor.red = colorCode.red;
+              structJson.nodeImage.borderColor.green = colorCode.green;
+              structJson.nodeImage.borderColor.blue = colorCode.blue;
+            }
           });
           checkId++;
           collectiveStuctData.push(structJson)
@@ -295,7 +343,7 @@ export class DonutchartsComponent implements OnInit, OnChanges {
     this.OrgData = collectiveStuctData;
     console.log("OrgData", this.OrgData);
   }
-  
+
 
 }
 

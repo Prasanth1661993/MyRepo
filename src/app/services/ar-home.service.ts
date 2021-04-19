@@ -45,5 +45,7 @@ export class ArHomeService{
     getMockData(): Promise<any> {
         return this.http.get(this.mockJson).toPromise();
       }
-
+      getMockDataSelected(): Promise<any> {
+        return this.http.get(this.mockJson1).toPromise();
+      }
 }

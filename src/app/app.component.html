@@ -1,3 +1,12 @@
-<router-outlet></router-outlet>
+<div  class="main-container">
+<div style="background-color: black; padding-top: 10px; width:auto;height: 60px; ">
+    <span style="color: white; margin-left:25px; padding:10px; width:20px; height:10px;font-size: 25px; ">EY</span>
+    </div>
+<div *ngIf="check; else elseBlock">
+    <app-barcharts [nodeData]="nodeData"></app-barcharts>
+</div>
+<ng-template #elseBlock>
+    <app-donutcharts (newItemEvent)="addItem($event)" (nodeData)="redirectNode($event)" [data]="data"></app-donutcharts> 
+</ng-template>
 
-<app-donutcharts [data]="data"></app-donutcharts> 
+</div>

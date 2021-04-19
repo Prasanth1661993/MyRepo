@@ -8,7 +8,8 @@ import { BarchartsComponent } from './barcharts/barcharts.component';
 
 
 const routes: Routes = [
-
+  { path: '',   redirectTo: 'donut', pathMatch: 'full' }, // redirect to `first-component`
+  { path: '**', component: DonutchartsComponent },
   {
     path:'arhome',
     component:ArhomeComponent

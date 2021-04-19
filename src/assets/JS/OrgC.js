@@ -462,6 +462,10 @@ function myTest(data){
                        includes('node-button-circle')){
                      return;
                    }
+                   if([...d3.event.srcElement.classList].
+                    includes('node-icon-image')){
+                  return d.data.nodeId;
+                }
                    attrs.onNodeClick(d.data.nodeId);
                 })
 
@@ -488,7 +492,7 @@ function myTest(data){
                 .attr('width', '327')
                 .attr('height', '100')
                 .attr('x', '-120')
-                .attr('y', d=> -d.height/2 )
+                .attr('y', d=> -d.height/2  )
 
             // Add foreign object 
             fo.patternify({
@@ -505,8 +509,16 @@ function myTest(data){
                 .patternify({
                     tag: 'image',
                     selector: 'node-icon-image',
-                    data: d => [d]
+                    data: d => [d],
                 })
+                 .on('click', function(d){
+                   
+                //     if([...d3.event.srcElement.classList].
+                //      includes('node-icon-image')){
+                //    return ;
+                //  }
+                    attrs.onNodeClick(d.data);
+                 })
                 .attr('width', d=>  d.data.nodeIcon.size)
                 .attr('height', d=>  d.data.nodeIcon.size)
                 .attr("xlink:href",d=>d.data.nodeIcon.icon)
@@ -514,7 +526,9 @@ function myTest(data){
                 .attr('y','-35')
                 .attr('rx','100')
                 .attr('border','2px')
-
+                // function clickIcon(d) {
+                //     window.alert("clickIcon"+clickIcon +d)
+                //  }
                 nodeEnter
                 .patternify({
                     tag: 'image',
@@ -579,6 +593,8 @@ function myTest(data){
                 })
                 .on('click', click)
 
+                
+
             // Add button circle 
             nodeButtonGroups
                 .patternify({
@@ -638,10 +654,10 @@ function myTest(data){
 
             // Update  node attributes and style
             nodeUpdate.select('.node-rect')
-                .attr('width', '387')
-                .attr('height', '120')
+                .attr('width', d => d.data.nodeWidth)
+                .attr('height', d => d.data.nodeHeight)
                 .attr('x', d => -d.data.width / 2)
-                .attr('y', d => -d.data.height / 2)
+                .attr('y', d => -d.data.height / 2 )
                 .attr('rx', '50px')
                 .attr('stroke-width', d => d.data.borderWidth || attrs.strokeWidth)
                 .attr('stroke', '#CBCBCB')
