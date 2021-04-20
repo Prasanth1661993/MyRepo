@@ -6,7 +6,11 @@
     <app-barcharts [nodeData]="nodeData"></app-barcharts>
 </div>
 <ng-template #elseBlock>
-    <app-donutcharts (newItemEvent)="addItem($event)" (nodeData)="redirectNode($event)" [data]="data"></app-donutcharts> 
+    <app-donutcharts 
+    (newItemEvent)="addItem($event)"
+    (nodeData)="redirectNode($event)"
+    (orgIconClick)="checkOrgIcon($event)"
+    [data]="data"></app-donutcharts> 
 </ng-template>
 
 </div>

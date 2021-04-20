@@ -11,6 +11,7 @@ export class AppComponent implements OnInit {
   data:any = null;
   check: any;
   nodeData: String;
+  checkOrgIconClick: boolean;
   constructor(private arHomeService: ArHomeService) { }
   ngOnInit(){
     // d3.json(
@@ -29,11 +30,22 @@ export class AppComponent implements OnInit {
     this.check = newItem;
   
   }
-  redirectNode(nodeData: String){
+  redirectNode(nodeData: string){
     if(this.check){
       this.nodeData = nodeData;
       console.log("nodeData",nodeData);
     }
+  }
+  checkOrgIcon(checkItem: boolean){
+    this.checkOrgIconClick = checkItem;
+    if(checkItem){
+      this.arHomeService.getMockDataSelected().then(
+        data => {
+          this.data = data;
+          // window.location.reload();
+        });
+        this.addItem(false);
+    }    
 
   }
 

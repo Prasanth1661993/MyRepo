@@ -22,6 +22,7 @@ export class DonutchartsComponent implements OnInit, OnChanges {
   @Input() data: any[];
   @Output() newItemEvent = new EventEmitter<boolean>();
   @Output() nodeData = new EventEmitter<object>();
+  @Output() orgIconClick = new EventEmitter<boolean>();
   chart;
   getChartState: any;
   rawData = [];
@@ -88,18 +89,13 @@ export class DonutchartsComponent implements OnInit, OnChanges {
         if (selectedNode == node.nodeId) {
           let nodeData = node;
           this.newItemEvent.emit(true);
-          this.nodeData.emit(nodeData)
-  // this.router.navigate(['bar']);
-  
+          this.nodeData.emit(nodeData)  
         }
       });
     } else {
      
-      this.isNodeIconSelected = true;
-      // this.ngOnChanges();
-      // this.constructJsonData();
-      // this.ngAfterViewInit();
-      // this.updateChart();
+      this.orgIconClick.emit(true);
+      
       
     }
 
@@ -130,7 +126,12 @@ export class DonutchartsComponent implements OnInit, OnChanges {
 
   constructJsonData() {
     console.log("Inside constructJsonData")
-    if (!this.isNodeIconSelected) {
+     if(this.rawData != null){
+        this.rawData.length = 0;
+       }
+    this.OrgData.length = 0;
+    
+    if (this.isNodeIconSelected) {
       // this.arHomeService.getMockData().then(
       //   data => {
         if(this.data){
@@ -140,20 +141,25 @@ export class DonutchartsComponent implements OnInit, OnChanges {
         }
       //   }
       // );
-    }else{
-      this.rawData = [];
-      let selectedData = [];
-      this.arHomeService.getMockDataSelected().then(
-        data => {
-          data.forEach(element => {
-            selectedData.push(element);
-
-          });
-           this.rawData = selectedData;
-        
-        }
-      );
     }
+     else{
+       if(this.rawData != null){
+        this.rawData.length = 0;
+       }
+      this.rawData = this.data;
+    //   this.rawData = [];
+    //   let selectedData = [];
+    //   this.arHomeService.getMockDataSelected().then(
+    //     data => {
+    //       data.forEach(element => {
+    //         selectedData.push(element);
+
+    //       });
+    //        this.rawData = selectedData;
+        
+    //     }
+    //   );
+     }
     let collectiveStuctData = [];
     if (this.rawData != null) {
       let checkId = 1;
@@ -340,6 +346,7 @@ export class DonutchartsComponent implements OnInit, OnChanges {
         }
       });
     }
+    this.OrgData.length = 0;
     this.OrgData = collectiveStuctData;
     console.log("OrgData", this.OrgData);
   }
